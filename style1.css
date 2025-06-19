@@ -1,4 +1,26 @@
 /* universal selector */
-*{
+* {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* element selector */
+h3 {
+    color: purple;
+}
+
+h1 {
+    color: #b92b27;
+}
+
+#login {
+    background-color: aliceblue;
+}
+
+#signup {
+    background-color: #b92b27;
+    color: aliceblue;
+}
+
+.up{
+    background-color: bisque;
 }
