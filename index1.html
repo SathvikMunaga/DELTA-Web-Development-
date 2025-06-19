@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stress Relief - Fill the Screen with Hearts</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #111;
+      cursor: pointer;
+      height: 100vh;
+      width: 100vw;
+      position: relative;
+      user-select: none;
+    }
+
+    .heart {
+      position: absolute;
+      color: #ff4d6d;
+      animation: float 2s ease-out forwards;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      user-select: none;
+    }
+
+    @keyframes float {
+      0% {
+        opacity: 0.8;
+        transform: translate(-50%, -50%) scale(1);
+      }
+      100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1.5);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<script>
+  let clickCount = 0;
+
+  function spawnHeart(x, y) {
+    clickCount++;
+
+    const heart = document.createElement('div');
+    heart.className = 'heart';
+    heart.textContent = '❤️';
+
+    // Size increases with more clicks, capped at 200px
+    const size = Math.min(20 + clickCount * 2, 200);
+    heart.style.fontSize = `${size}px`;
+    heart.style.left = `${x}px`;
+    heart.style.top = `${y}px`;
+    document.body.appendChild(heart);
+
+    heart.addEventListener('animationend', () => {
+      heart.remove();
+    });
+  }
+
+  // Mouse clicks
+  document.addEventListener('click', (e) => {
+    spawnHeart(e.clientX, e.clientY);
+  });
+
+  // Mobile taps
+  document.addEventListener('touchstart', (e) => {
+    for (let i = 0; i < e.touches.length; i++) {
+      spawnHeart(e.touches[i].clientX, e.touches[i].clientY);
+    }
+  });
+</script>
+
+</body>
+</html>
