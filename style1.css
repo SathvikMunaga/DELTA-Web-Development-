@@ -24,3 +24,20 @@ h1 {
 .up{
     background-color: bisque;
 }
+/* Descendent selector */
+p a{
+    color: #b92b27;
+}
+
+p+h3{
+    text-decoration: underline;
+}
+
+.up + button{
+    background-color: aquamarine;
+}
+
+button:hover{
+    background-color: rebeccapurple;
+    color: black;
+}
