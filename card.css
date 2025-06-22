@@ -1,0 +1,28 @@
+div{
+    display: inline-block;
+}
+.card{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 15px;
+    border: solid black;
+}
+img{
+    width: 100%;
+}
+#men{
+    background-color: yellow;
+    box-shadow: 0px 3px 15px cornflowerblue;
+}
+#women{
+    background-color: cornflowerblue;
+    box-shadow: 0px 3px 15px yellow;
+    
+}
+h4{
+    padding: 3px;
+}
+.card:hover{
+    box-shadow: 0px 6px 30px;
+}
