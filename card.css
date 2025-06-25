@@ -2,27 +2,39 @@ div{
     display: inline-block;
 }
 .card{
-    height: 200px;
+    height: auto;
     width: 200px;
     margin: 10px;
-    border-radius: 15px;
+    border-radius: 25px;
     border: solid black;
 }
-img{
+img{  
     width: 100%;
 }
 #men{
-    background-color: yellow;
     box-shadow: 0px 3px 15px cornflowerblue;
 }
 #women{
-    background-color: cornflowerblue;
+    
     box-shadow: 0px 3px 15px yellow;
     
 }
 h4{
-    padding: 3px;
+    padding: 4px;
 }
-.card:hover{
+#men:hover{
     box-shadow: 0px 6px 30px;
+}
+#women:hover{
+    box-shadow: 0px 6px 30px;
+}
+#zero{
+    background-color: yellow;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+#one{
+    background-color: cornflowerblue;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
