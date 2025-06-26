@@ -1,9 +1,9 @@
 #container{
     width: 500px;
     height: 500px;
-    border: solid olive 3px;
+    border: solid olive 5px;
     background-color: aliceblue;
-    border-radius: 10px;
+    border-radius: 15px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
