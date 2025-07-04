@@ -58,28 +58,96 @@
         <div class="main-content">
             <div class="sticky-nav">
                 <div class="sticky-nav-icons">
-                <img src="./backward_icon.png">
-                <img src="./forward_icon.png" class="hide">
-            </div>
-            <div class="sticky-nav-options">
-                <button class="badge nav-item hide">Explore Premium</button>
-                <button class="badge nav-item" style="background-color: black; color: white;"><i
-                        class="fa-regular fa-circle-down" style="margin-right: 7px; height: 1rem; width: 1rem;"></i>Install App</button>
-                        <i class="fa-regular fa-user nav-item"></i>  
-            </div>
+                    <img src="./backward_icon.png">
+                    <img src="./forward_icon.png" class="hide">
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-item hide">Explore Premium</button>
+                    <button class="badge nav-item" style="background-color: black; color: white;"><i
+                            class="fa-regular fa-circle-down"
+                            style="margin-right: 7px; height: 1rem; width: 1rem;"></i>Install App</button>
+                    <i class="fa-regular fa-user nav-item"></i>
+                </div>
             </div>
             <div class="cards">
                 <h2>Recently Played</h2>
                 <div class="cards-container">
                     <div class="card">
-                        <img src="./card1img.jpeg">
+                        <img src="./card1img.jpeg" class="card-img">
                         <p class="card-title">Top 50 - Global</p>
-                        <p class="card-info">Your daily updates of the most played tracks</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                    </div>
+                </div>
+                <h2>Trending now near you</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="./card2img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="./card3img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="./card4img.jpeg" class="card-img">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most played...</p>
                     </div>
                 </div>
             </div>
+            <h2>Featured Charts</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./card5img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="./card6img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line"></div>
+            </div>
         </div>
-        <div class="music-player">Music Player</div>
+        <div class="music-player">
+            <div class="album">
+                <img src="./card4img.jpeg" class="alb-img">
+                <div class="p">
+                    <p class="song">Badass</p>
+                    <p class="singer">Vijay Thalapathy</p>
+                </div>
+                <i class="fa-solid fa-heart alb-icon heart"></i>
+            </div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./player_icon1.png" class="player-controls-icon">
+                    <img src="./player_icon2.png" class="player-controls-icon">
+                    <img src="./player_icon3.png" class="player-controls-icon"
+                        style="opacity: 1; width: 2rem; height: 2rem;">
+                    <img src="./player_icon4.png" class="player-controls-icon">
+                    <img src="./player_icon5.png" class="player-controls-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="str-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar">
+                    <span class="end-time">3:33</span>
+                </div>
+            </div>
+            <div class="controls">
+                <i class="fa-solid fa-computer" class="ci"></i>
+                <i class="fa-solid fa-microphone" class="ci"></i>
+                <i class="fa-solid fa-layer-group" class="ci"></i>
+                <i class="fa-solid fa-volume-high" class="ci"></i>
+                <label for="v">
+                    <input type="range" min="0" max="100" class="volume" id="v">
+                </label>
+            </div>
+        </div>
     </div>
 
 </html>
