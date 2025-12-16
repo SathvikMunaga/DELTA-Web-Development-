@@ -1,0 +1,18 @@
+div{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            transition: 1s 3ms;
+            border-radius: 50%;
+            margin: auto;
+            background-image: url("New photo.jpg");
+            background-size: cover;
+        }
+        div:hover{
+            background-color: blueviolet;
+            border-radius: 50%;
+            transform: rotate(-45deg);
+            border-radius: 0%;
+            scale: 0.5;
+            box-shadow: 3px 3px 15px rgb(229, 65, 10);
+        }

@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+}
+.container{
+    width: 600px;
+    height: 300px;
+    background-color: aquamarine;
+    border: 3px solid;
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 10px;
+    column-gap:10px ;
+}
+.item{
+    /* width: 100px;
+    height: 50px; */
+    background-color: limegreen;
+    border: 2px solid;
+    text-align: center;
+}
+#one{
+     grid-column-start: 1;
+    grid-column-end: 3;
+}

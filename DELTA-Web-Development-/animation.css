@@ -1,0 +1,21 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border-radius: 50%;
+    border: 2px solid;
+    animation: div 3s ease-in-out 1s infinite normal;
+    transform: rotate(45deg);
+}
+
+@keyframes div{
+    from{width: 100px;
+    height: 100px;}
+    to{
+        width: 200px;
+        height: 200px;
+        border: 5px solid;
+        border-radius: 0%;
+        background-color: olive;
+    }
+}
