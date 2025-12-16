@@ -1,0 +1,23 @@
+#container{
+    width: 500px;
+    height: 500px;
+    border: solid olive 5px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.content{
+    height: 150px;
+    width: 150px;
+    background-color: gray;
+    display: inline-block;
+    flex-wrap: wrap;
+    font-size: 40px;
+    text-align: center;
+    border: 3px solid;
+    border-radius: 15px;
+}
